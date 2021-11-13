@@ -17,14 +17,14 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <h1> <%= title%></h1>
-       <form method="POST" action="/new">
-        <label for="formName">Name:</label>
-        <input type="text" name="formName" id="formName">
+        <h1 class="container-fluid bg-primary text-white text-center"> <%= title%></h1>
+       <form method="POST" action="/new" class="">
+        <label for="formName" class="form-label">Name:</label>
+        <input type="text" name="formName" id="formName" class="form-control" placeholder="Your Name">
         <br>
-        <label for="formText">Message:</label>
-        <input type="text" name="formText" id="formText">
-        <input type="submit" value="submit">
+        <label for="formText" class="form-label">Message:</label>
+        <input type="text" name="formText" id="formText" class="form-control" placeholder="Your Journal entry goes here!">
+        <input type="submit" value="Post to Journal" class="container-fluid btn btn-primary btn-lg link-light text-center" placeholder="Post to Journal.">
         </form>
         
         <script src="" async defer>
